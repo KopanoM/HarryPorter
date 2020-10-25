@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HarryPorter</string>
+    <string name="get_access_to_all_your_spells_houses_and_characters">Get access to all your spells, houses and characters</string>
+    <string name="action">Action</string>
+    <string name="Settings">Settings</string>
+    <string name="Magic">Spells</string>
+</resources>
