@@ -51,6 +51,8 @@ class HousesAdapter(
         val thumbnail: ImageView = itemView.item_thumbnail
         val title: TextView = itemView.item_title
         val mascot: TextView = itemView.item_mascot
+        val founder: TextView = itemView.item_founder_school
+        val headofhouse: TextView = itemView.item_headofhouse
         val linear: LinearLayout = itemView.item_lin
         //val rating_tomatoes: TextView = itemView.item_tomatoes
         //val rating_stars : TextView = itemView.item_stars
@@ -59,7 +61,9 @@ class HousesAdapter(
         fun bind(houseItem: HousesItem) {
 
             title.setText(houseItem.name)
-            mascot.setText(houseItem.mascot)
+            mascot.setText("Mascot: "+houseItem.mascot)
+            founder.setText("Founder: " + houseItem.founder)
+            headofhouse.setText("HOH: " + houseItem.headOfHouse)
             //rating_tomatoes.setText(movie.imdbRating)
             //rating_stars.setText(movie.metascore)
             //year.setText(movie.year)
@@ -77,11 +81,14 @@ class HousesAdapter(
             } else if (houseItem.name == "Hufflepuff") {
                 image = R.drawable.hufflepuff
             }
-            thumbnail.setImageResource(R.drawable.gryffindor)
+            //thumbnail.setImageResource(R.drawable.gryffindor)
+
             Glide.with(itemView.context)
                 .applyDefaultRequestOptions(requestOptions)
                 .load(image)
                 .into(thumbnail)
+
+
 
         }
 

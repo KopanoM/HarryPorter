@@ -2,6 +2,7 @@ package qubit.engineering.harryporter.Data
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class Member(
     val bloodStatus: String,
@@ -17,4 +18,4 @@ data class Member(
     val species: String,
     @SerializedName("__v")
     val v: Int
-)
+):Serializable

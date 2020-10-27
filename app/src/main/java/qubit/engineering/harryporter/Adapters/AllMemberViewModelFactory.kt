@@ -3,6 +3,7 @@ package qubit.engineering.harryporter.Adapters
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import qubit.engineering.harryporter.Repo.HarryRepo
+import qubit.engineering.harryporter.UI.AllMemberViewModel
 import qubit.engineering.harryporter.UI.HousesViewModel
 
 class AllMemberViewModelFactory(
@@ -11,6 +12,6 @@ class AllMemberViewModelFactory(
 
     ): ViewModelProvider.NewInstanceFactory(){
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        return AllMemberViewModelFactory(repo) as T
+        return AllMemberViewModel(repo) as T
     }
 }

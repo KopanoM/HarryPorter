@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.ShowAllSpells"></activity>
+        <activity android:name=".UI.ShowMeOneMember"></activity>
+        <activity android:name=".UI.AllMembers" />
+        <activity android:name=".UI.ShowAllSpells" />
         <activity android:name=".UI.ShowMembers" />
         <activity android:name=".UI.HousesList" />
         <activity android:name=".UI.Spells" />

@@ -9,7 +9,7 @@ import qubit.engineering.harryporter.Repo.HarryRepo
 class AllMemberViewModel(private val repo:HarryRepo) : ViewModel(){
     private val compositeDisposable = CompositeDisposable()
 
-    val memberDets: LiveData<List<Member>> by lazy{
+    val allMembers: LiveData<List<Member>> by lazy{
         repo.getAllMembers(compositeDisposable)
     }
 
