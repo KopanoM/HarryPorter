@@ -4,4 +4,17 @@
     <string name="action">Action</string>
     <string name="Settings">Settings</string>
     <string name="Magic">Spells</string>
+
+    <string name="founder">Founder</string>
+    <string name="mascot">Mascot</string>
+    <string name="school">School</string>
+    <string name="headofhouse">Head of House</string>
+    <string name="houseghost">House Ghost</string>
+    <string name="colors">Colors</string>
+    <string name="name">Gryffindor</string>
+    <string name="internet">there_is_a_problem_with_your_internet_please_check_your_online_or_that_your_movie_exists</string>
+    <string name="ministry_of_magic">Ministry of Magic</string>
+    <string name="blood_status">Blood Status</string>
+
+
 </resources>
